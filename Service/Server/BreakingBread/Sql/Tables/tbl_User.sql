@@ -1,14 +1,9 @@
 /*****************************************************************************
-* tbl_Order
+* tbl_User
 *****************************************************************************/
-CREATE TABLE tbl_Order
+CREATE TABLE tbl_User
 (
-    OrderId                INT                   NOT NULL PRIMARY KEY,
-    UserId                 NVARCHAR(256)         NOT NULL,
-    AddressId              INT                   NOT NULL,
-    DeliveryDate           DATETIME              NOT NULL,
-    DeliveryTime           DATETIME              NOT NULL,
-    MenuId                 INT                   NOT NULL,
-    PaymentMethod          NVARCHAR              NOT NULL DEFAULT 'COD'
-    
+    UserId                 NVARCHAR(256)         NOT NULL PRIMARY KEY,
+    Name                   NVARCHAR(MAX)         NOT NULL,
+    Mobile                 BIGINT                NOT NULL,
 )
