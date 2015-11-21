@@ -1,14 +1,12 @@
 /*****************************************************************************
-* tbl_Order
+* tbl_Address
 *****************************************************************************/
-CREATE TABLE tbl_Order
+CREATE TABLE tbl_Address
 (
-    OrderId                INT                   NOT NULL PRIMARY KEY,
-    UserId                 NVARCHAR(256)         NOT NULL,
-    AddressId              INT                   NOT NULL,
-    DeliveryDate           DATETIME              NOT NULL,
-    DeliveryTime           DATETIME              NOT NULL,
-    MenuId                 INT                   NOT NULL,
-    PaymentMethod          NVARCHAR              NOT NULL DEFAULT 'COD'
-    
+    AddressId         INT                   NOT NULL PRIMARY KEY,
+    UserId            NVARCHAR(256)         NOT NULL,
+    Area              NVARCHAR(MAX)         NOT NULL,
+    Flat              NVARCHAR(MAX)         NOT NULL,
+    Landmark          NVARCHAR(MAX)         NULL,
+    City              NVARCHAR(256)         NOT NULL DEFAULT 'HYD'
 )
