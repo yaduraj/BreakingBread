@@ -141,6 +141,9 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Sql\*\*.sql" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\brbr.pubxml" />
+    <None Include="Properties\PublishProfiles\breakingbread %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\BreakingBread.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
